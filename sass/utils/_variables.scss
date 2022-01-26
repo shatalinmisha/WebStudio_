@@ -1,0 +1,37 @@
+$titleText: #212121;
+$subtitleText: #757575;
+$accent: #2196f3;
+$textBtn: #ffffff;
+$fon: #2f303a;
+$btnFon: #f5f4fa;
+$iconFon: #afb1b8;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: $titleText;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}

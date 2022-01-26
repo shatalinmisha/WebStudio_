@@ -1,0 +1,247 @@
+// Текст подвала
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: $fon;
+
+  @media screen and (max-width: 479px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
+  // основной текст футера
+  &__container {
+    @media screen and (max-width: 479px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+      width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: 768px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
+  }
+
+  &__logo {
+    display: block;
+    margin-bottom: 20px;
+
+    font-family: 'Raleway', sans-serif;
+    color: $textBtn;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+  }
+
+  &__logo-color {
+    color: $accent;
+  }
+
+  &__address {
+    // display: block;
+    margin-bottom: 9px;
+    font-size: 14px;
+    color: $textBtn;
+    font-style: normal;
+    letter-spacing: 0.03em;
+
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+  }
+
+  &__item {
+    // display: block;
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
+  }
+}
+// Ссылки
+.join {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+    color: $textBtn;
+
+    @media screen and (max-width: 767px) {
+      margin-top: 60px;
+      text-align: center;
+    }
+  }
+
+  &__list {
+    display: flex;
+
+    @media screen and (max-width: 767px) {
+      justify-content: center;
+    }
+  }
+
+  &__message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    color: $textBtn;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background: $accent;
+    }
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+}
+// подписатся
+.subscribe {
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+    color: $textBtn;
+
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+  }
+  // инпут и кнопка
+
+  &__block {
+    @media screen and (max-width: 767px) {
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__mail {
+    input {
+      height: 50px;
+      padding-left: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+      border-radius: 4px;
+      background-color: $fon;
+    }
+
+    @media screen and (max-width: 767px) {
+      input {
+        width: 100%;
+      }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199) {
+      input {
+        width: 450px;
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      input {
+        width: 358px;
+      }
+    }
+  }
+
+  &__button {
+    padding: 10px 28px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+
+    background: $accent;
+
+    @media screen and (max-width: 767px) {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: center;
+      margin-left: 12px;
+    }
+  }
+
+  &__text-button {
+    margin-right: 10px;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    color: $textBtn;
+  }
+}

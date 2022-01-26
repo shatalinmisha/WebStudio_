@@ -1,0 +1,60 @@
+.features {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+
+  &__item {
+    @media screen and (max-width: 767px) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+
+    @media screen and(min-width: 1200px) {
+      width: 270px;
+
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+  }
+
+  &__icon {
+    background: $btnFon;
+    border-radius: 4px;
+
+    @media screen and (max-width: 479px) {
+      width: auto;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+      width: 450px;
+      text-align: center;
+      padding: 25px 190px;
+      margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+      padding: 25px 100px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: $subtitleText;
+  }
+}
