@@ -7,6 +7,8 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
 
+  overflow-y: scroll;
+
   transition: opacity 250ms linear, visibility 250ms linear;
 }
 
@@ -16,12 +18,25 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 528px;
-  min-height: 581px;
+
   background: $textBtn;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
+  // @media screen and (min-width: 320px) and (max-width: 479px) {
+  //   width: calc(100vw * (15 / 16));
+  // }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    width: 450px;
+    margin: 94px auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 528px;
+    max-height: 581px;
+  }
 
   &__exit {
     position: absolute;
@@ -136,6 +151,12 @@ textarea {
       fill: $accent;
     }
   }
+  
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    .application__input {
+      width: 450px;
+    }
+  }
 
   textarea {
     outline-style: none;
@@ -158,6 +179,13 @@ textarea {
       letter-spacing: 0.01em;
 
       color: rgba(117, 117, 117, 0.5);
+    }
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    textarea {
+      display: block;
+      width: 450px;
     }
   }
 }

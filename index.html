@@ -20,17 +20,17 @@
 
             <header class="header"> 
                 <div class="main-size header__nav">
+                    <div class="mobile-nav">
                         <a href="./index.html" class="header__link"><span class="header__logo">Web</span>Studio</a>
                     
-                    <button class="menu-button" type="button" data-menu-button>
-                        <svg class="menu-button__icons" width="24" height="24">
-                            <use class="menu-button__menu-icon" href="./images/icon.svg#icon-menu-mobile"></use>
-                            <use class="menu-button__closs-icon" href="./images/icon.svg#icon-close-mobile"></use>
-                        </svg>
-                    </button>
-                    
-
-                    <!-- <div class="mobile-content"> -->
+                        <button class="menu-button" type="button" aria-expanded="false" aria-controls="menu-container" data-menu-button >
+                            <svg class="menu-button__icons" width="24" height="24" aria-label="Кнопка открытия мобильного меню">
+                                <use class="menu-button__menu-icon" href="./images/icon.svg#icon-menu-mobile"></use>
+                                <use class="menu-button__closs-icon" href="./images/icon.svg#icon-close-mobile"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="menu-container" id="menu-container" data-menu>
                         <nav>    
                             <ul class="navigation">
                                 <li class="navigation__item"><a href="./index.html" class="navigation__link current">Студия</a></li>
@@ -57,7 +57,7 @@
                             </li>
                         </ul>
 
-                        <!-- <ul class="header-social-network">
+                        <ul class="header-social-network">
                             <li class="header-social-network__item">
                                 <a class="header-social-network__link" href="">Instagram</a>
                             </li>
@@ -70,8 +70,8 @@
                             <li class="header-social-network__item">
                                 <a class="header-social-network__link" href="">LinkedIn</a>
                             </li>
-                        </ul> -->
-                    <!-- </div> -->
+                        </ul>
+                    </div>
                 </div>
             </header>
 

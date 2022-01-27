@@ -4,8 +4,21 @@
   }
 
   &__item {
+    display: flex;
+    flex-wrap: wrap;
+
     @media screen and (max-width: 767px) {
       &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      &:nth-child(odd) {
+        margin-right: 30px;
+      }
+
+      &:nth-child(-n + 2) {
         margin-bottom: 30px;
       }
     }
@@ -34,6 +47,12 @@
       text-align: center;
       padding: 25px 190px;
       margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: 354px;
+      text-align: center;
+      padding: 25px 144px;
     }
 
     @media screen and (min-width: 1200px) {
