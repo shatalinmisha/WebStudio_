@@ -1,55 +1,94 @@
-@media screen and (max-width: 767px) {
-  .mobile-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.mobile-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 
-  .menu-button {
-    display: inline-flex;
-    margin: 0;
-    padding: 0;
-    border: none;
-    background-color: transparent;
+  &__closs-icon {
+    display: none;
+  }
 
-    &__closs-icon {
+  &.is-open {
+    .menu-button__closs-icon {
+      display: block;
+    }
+  }
+
+  &.is-open {
+    .menu-button__menu-icon {
       display: none;
     }
-
-    &.is-open {
-      .menu-button__closs-icon {
-        display: block;
-      }
-    }
-
-    &.is-open {
-      .menu-button__menu-icon {
-        display: none;
-      }
-    }
   }
+}
 
+@media screen and (max-width: 767px) {
   .menu-container {
+    //   text-align: start;
     display: none;
-
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
-    height: 600px;
+    height: auto;
     background-color: $textBtn;
-    padding: 20px;
-    text-align: start;
+    padding: 48px 40px;
     font-size: 20px;
 
     &.is-open {
       display: block;
+
+      .navigation {
+        display: block;
+      }
+
+      .contacts {
+        display: block;
+        text-align: start;
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: flex;
+    flex-grow: 1;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-social-network {
+    display: flex;
+    justify-content: flex-start;
+
+    &__item {
+      align-items: center;
+      margin-right: 10px;
+    }
+
+    &__link {
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 0.02em;
+      color: $accent;
     }
   }
 }
 
 @media screen and (min-width: 768px) {
-  .menu-button {
+  .header-social-network {
     display: none;
   }
 }

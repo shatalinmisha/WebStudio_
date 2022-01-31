@@ -1,12 +1,12 @@
 .features {
-  @media screen and (min-width: 1200px) {
-    display: flex;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  // @media screen and (min-width: 1200px) {
+  //   display: flex;
+  // }
 
   &__item {
-    display: flex;
-    flex-wrap: wrap;
-
     @media screen and (max-width: 767px) {
       &:not(:last-child) {
         margin-bottom: 30px;
@@ -17,10 +17,11 @@
       &:nth-child(odd) {
         margin-right: 30px;
       }
-
       &:nth-child(-n + 2) {
         margin-bottom: 30px;
       }
+
+      flex-basis: calc((100% - 4 * 15px) / 2);
     }
 
     @media screen and(min-width: 1200px) {
@@ -37,8 +38,9 @@
     border-radius: 4px;
 
     @media screen and (max-width: 479px) {
-      width: auto;
+      width: 100%;
       text-align: center;
+      padding: 1vh 1vw;
       margin-bottom: 30px;
     }
 
@@ -53,6 +55,7 @@
       width: 354px;
       text-align: center;
       padding: 25px 144px;
+      margin-bottom: 30px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -68,6 +71,11 @@
     line-height: 1.1;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      display: block;
+      width: 354px;
+    }
   }
 
   &__text {
@@ -75,5 +83,10 @@
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: $subtitleText;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      display: block;
+      width: 354px;
+    }
   }
 }
