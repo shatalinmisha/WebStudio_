@@ -12,6 +12,10 @@
   }
 
   &__nav {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      display: flex;
+    }
+
     @media screen and (min-width: 1200px) {
       display: flex;
       align-items: center;
@@ -36,6 +40,10 @@
 }
 .navigation {
   display: flex;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 88px;
+  }
 
   &__item:not(:last-child) {
     margin-right: 50px;
@@ -90,8 +98,15 @@
 }
 
 .contacts {
-  display: flex;
-  margin-left: auto;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: block;
+    margin-left: 84px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
+  }
 
   &__list {
     @media screen and (min-width: 1200px) {

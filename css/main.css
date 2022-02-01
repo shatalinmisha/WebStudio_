@@ -145,6 +145,14 @@ p {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .header__nav {
     display: -webkit-box;
@@ -178,6 +186,12 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .navigation {
+    margin-left: 88px;
+  }
 }
 
 .navigation__item:not(:last-child) {
@@ -236,11 +250,20 @@ p {
   color: #2196f3;
 }
 
-.contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts {
+    display: block;
+    margin-left: 84px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -491,10 +514,15 @@ p {
   border-radius: 4px;
 }
 
+@media screen and (max-width: 479px) {
+  .modal {
+    width: 90vw;
+  }
+}
+
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .modal {
     width: 450px;
-    margin: 94px auto;
   }
 }
 
@@ -541,9 +569,17 @@ p {
   color: #212121;
 }
 
-.form-modal {
-  min-width: 448px;
-  min-height: 342px;
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .form-modal {
+    width: 370px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form-modal {
+    min-width: 448px;
+    min-height: 342px;
+  }
 }
 
 input,
@@ -628,18 +664,24 @@ textarea {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 479px) {
+  .application__input {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .application__input {
+    width: 370px;
+  }
+}
+
 .application__input:focus {
   border-color: #2196f3;
 }
 
 .application__input:focus + .application__icon {
   fill: #2196f3;
-}
-
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .application .application__input {
-    width: 450px;
-  }
 }
 
 .application textarea {
@@ -694,10 +736,9 @@ textarea {
   color: rgba(117, 117, 117, 0.5);
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .application textarea {
-    display: block;
-    width: 450px;
+    width: 370px;
   }
 }
 
@@ -712,10 +753,21 @@ textarea {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 20px;
-  font-size: 14px;
-  line-height: 24px;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .privacy-text {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .privacy-text {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 .privacy-text__icon-input {
@@ -1219,13 +1271,11 @@ textarea {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__container {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
   }
 }
 
@@ -1234,6 +1284,12 @@ textarea {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer__information {
+    margin-left: 76px;
   }
 }
 
@@ -1285,6 +1341,12 @@ textarea {
 @media screen and (max-width: 767px) {
   .join {
     margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .join {
+    margin-left: 165px;
   }
 }
 
@@ -1381,6 +1443,8 @@ textarea {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 60px;
   }
 }
@@ -1436,7 +1500,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .subscribe__mail input {
     width: 450px;
   }

@@ -28,9 +28,8 @@
   // основной текст футера
   &__container {
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-      display: inline-flex;
+      display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;
     }
 
     @media screen and (min-width: 1200px) {
@@ -38,11 +37,11 @@
     }
   }
 
-  // &__information {
-  //   @media screen and (min-width: 768px) and (max-width: 1199px) {
-  //     margin-right: 76px;
-  //   }
-  // }
+  &__information {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-left: 76px;
+    }
+  }
 
   &__logo {
     display: block;
@@ -90,6 +89,10 @@
 .join {
   @media screen and (max-width: 767px) {
     margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 165px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -156,6 +159,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 60px;
   }
 
@@ -201,7 +206,7 @@
       }
     }
 
-    @media screen and (min-width: 768px) and (max-width: 1199) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
       input {
         width: 450px;
       }

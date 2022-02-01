@@ -24,13 +24,12 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  // @media screen and (min-width: 320px) and (max-width: 479px) {
-  //   width: calc(100vw * (15 / 16));
-  // }
+  @media screen and (max-width: 479px) {
+    width: 90vw;
+  }
 
   @media screen and (min-width: 480px) and (max-width: 767px) {
     width: 450px;
-    margin: 94px auto;
   }
 
   @media screen and (min-width: 768px) {
@@ -78,8 +77,14 @@
 }
 
 .form-modal {
-  min-width: 448px;
-  min-height: 342px;
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    width: 370px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 448px;
+    min-height: 342px;
+  }
 }
 
 input,
@@ -144,17 +149,19 @@ textarea {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
+    @media screen and (max-width: 479px) {
+      width: 100%;
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+      width: 370px;
+    }
+
     &:focus {
       border-color: $accent;
     }
     &:focus + .application__icon {
       fill: $accent;
-    }
-  }
-  
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    .application__input {
-      width: 450px;
     }
   }
 
@@ -182,10 +189,9 @@ textarea {
     }
   }
 
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
     textarea {
-      display: block;
-      width: 450px;
+      width: 370px;
     }
   }
 }
@@ -195,10 +201,18 @@ textarea {
   align-items: center;
   justify-content: center;
   margin-top: 20px;
-  font-size: 14px;
-  line-height: 24px;
+
   letter-spacing: 0.03em;
   color: $subtitleText;
+
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 24px;
+  }
 
   &__icon-input {
     display: inline-block;
