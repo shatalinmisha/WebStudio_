@@ -252,8 +252,19 @@ p {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     margin-left: 84px;
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
 }
 
@@ -263,6 +274,12 @@ p {
     display: -ms-flexbox;
     display: flex;
     margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts__list:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
 
@@ -278,6 +295,14 @@ p {
         -ms-flex-align: center;
             align-items: center;
     margin-left: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -1639,7 +1664,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .portfolio-list__item {
     width: auto;
   }
