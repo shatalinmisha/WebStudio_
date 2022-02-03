@@ -262,7 +262,6 @@ p {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    margin-left: 84px;
     padding-top: 21px;
     padding-bottom: 21px;
   }
@@ -479,6 +478,9 @@ p {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -542,16 +544,18 @@ p {
 @media screen and (max-width: 479px) {
   .modal {
     width: 90vw;
+    margin: 94px auto;
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .modal {
     width: 450px;
+    margin: 94px auto;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .modal {
     max-width: 528px;
     max-height: 581px;
@@ -594,7 +598,7 @@ p {
   color: #212121;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .form-modal {
     width: 370px;
   }
@@ -1681,7 +1685,7 @@ textarea {
   .portfolio-list__item:nth-child(odd) {
     margin-right: 30px;
   }
-  .portfolio-list__item:nth-child(-n + 7) {
+  .portfolio-list__item:nth-child(-n + 8) {
     margin-bottom: 30px;
   }
   .portfolio-list__item:last-child {
@@ -1727,9 +1731,26 @@ textarea {
           transform: translateY(0);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-list__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+  }
+}
+
 .portfolio-list__overlay {
   position: relative;
   overflow: hidden;
+}
+
+.portfolio-list__img {
+  display: block;
 }
 
 .portfolio-list__text {
@@ -1757,6 +1778,14 @@ textarea {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-list__name {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
 }
 
 .portfolio-list__title {

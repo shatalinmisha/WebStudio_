@@ -69,7 +69,7 @@
       &:nth-child(odd) {
         margin-right: 30px;
       }
-      &:nth-child(-n + 7) {
+      &:nth-child(-n + 8) {
         margin-bottom: 30px;
       }
 
@@ -112,11 +112,21 @@
         transform: translateY(0);
       }
     }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
   }
 
   &__overlay {
     position: relative;
     overflow: hidden;
+  }
+
+  &__img {
+    display: block;
   }
 
   &__text {
@@ -142,6 +152,10 @@
     border-right: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
     border-left: 1px solid #eeeeee;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      flex-grow: 1;
+    }
   }
 
   &__title {
