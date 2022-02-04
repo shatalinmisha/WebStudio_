@@ -14,7 +14,6 @@
   &__nav {
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       display: flex;
-      // justify-content: space-between;
     }
 
     @media screen and (min-width: 1200px) {
@@ -113,6 +112,16 @@
   }
 
   &__list {
+    @media screen and (max-width: 767px) {
+      &:nth-child(1) {
+        margin-bottom: 64px;
+      }
+
+      &:nth-child(2) {
+        margin-bottom: 32px;
+      }
+    }
+
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       &:not(:last-child) {
         margin-bottom: 10px;
@@ -128,6 +137,12 @@
   }
 
   &__link {
+    @media screen and (max-width: 767px) {
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0.02em;
+    }
+
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       display: flex;
     }
@@ -144,18 +159,30 @@
         color: $accent;
       }
     }
+
+    @media screen and (max-width: 767px) {
+      &-tel {
+        font-size: 34px;
+        line-height: 40px;
+        color: $accent;
+      }
+    }
   }
 
   &-icon {
-    align-items: baseline;
-    fill: currentColor;
-    margin-right: 10px;
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+      align-items: baseline;
+      fill: currentColor;
+      margin-right: 10px;
+    }
   }
 }
 
 .main-container {
-  max-width: 1600px;
-  height: 600px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 200px;
@@ -163,7 +190,11 @@
   text-align: center;
   background: $fon;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/main-fon.jpg);
+    url(../images/header-mob-1x.jpg);
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/header-mob-2x.jpg);
+  }
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -176,6 +207,25 @@
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 768px;
     height: auto;
+
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/header-tab-1x.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/header-tab-2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    height: 600px;
+
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/header-desk-1x.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/header-desk-2x.jpg);
+    }
   }
 
   &__title {

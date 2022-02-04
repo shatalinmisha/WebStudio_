@@ -207,8 +207,11 @@ textarea {
   letter-spacing: 0.03em;
   color: $subtitleText;
 
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
+  @media screen and (max-width: 1199px) {
     width: 100%;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.03em;
   }
 
   @media screen and (min-width: 1200px) {
@@ -252,9 +255,17 @@ textarea {
 
   &__link {
     color: $accent;
-    font-size: 14px;
-    line-height: 24px;
     letter-spacing: 0.03em;
+
+    @media screen and (max-width: 1199px) {
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 24px;
+    }
   }
 }
 
