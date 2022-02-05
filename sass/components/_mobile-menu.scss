@@ -11,6 +11,15 @@
   border: none;
   background-color: transparent;
 
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: $accent;
+  }
+
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -20,6 +29,9 @@
   }
 
   &.is-open {
+    display: flex;
+    z-index: 2;
+
     .menu-button__closs-icon {
       display: block;
     }
@@ -46,7 +58,9 @@
     font-size: 20px;
 
     &.is-open {
-      display: block;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
 
       .navigation {
         display: block;
@@ -71,7 +85,6 @@
 @media screen and (max-width: 767px) {
   .header-social-network {
     display: flex;
-    // justify-content: flex-start;
 
     &__item {
       align-items: center;
@@ -79,6 +92,7 @@
     }
 
     &__link {
+      display: flex;
       text-decoration: none;
       font-weight: 500;
       font-size: 18px;
@@ -86,6 +100,13 @@
       letter-spacing: 0.02em;
       color: $accent;
     }
+
+    // &__icon {
+    //   width: 22px;
+    //   height: 0;
+    //   border: 1px solid rgba(33, 33, 33, 0.2);
+    //   transform: rotate(90deg);
+    // }
   }
 }
 
