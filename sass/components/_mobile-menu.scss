@@ -34,6 +34,7 @@
 
 @media screen and (max-width: 767px) {
   .menu-container {
+    z-index: 1;
     display: none;
     position: absolute;
     top: 100%;
@@ -70,7 +71,7 @@
 @media screen and (max-width: 767px) {
   .header-social-network {
     display: flex;
-    justify-content: flex-start;
+    // justify-content: flex-start;
 
     &__item {
       align-items: center;

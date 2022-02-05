@@ -188,6 +188,12 @@ p {
   display: flex;
 }
 
+@media screen and (max-width: 767px) {
+  .navigation {
+    margin-bottom: auto;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .navigation {
     margin-left: 88px;
@@ -511,6 +517,7 @@ p {
 
 @media screen and (max-width: 767px) {
   .menu-container {
+    z-index: 1;
     display: none;
     position: absolute;
     top: 100%;
@@ -558,9 +565,6 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
   }
   .header-social-network__item {
     -webkit-box-align: center;

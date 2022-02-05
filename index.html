@@ -31,12 +31,6 @@
                         </button>
                     </div>
                     <div class="menu-container" id="menu-container" data-menu>
-
-                        <button class="menu-button" type="button" aria-expanded="true" data-menu>
-                            <svg class="menu-button__icons" width="24" height="24" aria-label="Кнопка открытия мобильного меню">
-                                <use class="menu-button__closs-icon" href="./images/icon.svg#icon-close-mobile"></use>
-                            </svg>
-                        </button>
                         <nav>    
                             <ul class="navigation">
                                 <li class="navigation__item"><a href="./index.html" class="navigation__link current">Студия</a></li>
@@ -221,7 +215,18 @@
                     <div class="main-size">
                         <h2 class="container__subtitle">Наша команда</h2>
                         <ul class="team">
-                            <li class="team__item"><img srcset="./images/igor-1.jpg 1x, ./images/igor-2.jpg 2x" src="./images/igor-1.jpg" alt="Мужчина улыбается" width="100%">
+                            <li class="team__item">
+                                <picture>
+                                    <source srcset="./images/igor-desk-1.jpg 1x, ./images/igor-desk-2.jpg 2x" media="(min-width: 1200px)">
+                                    <source srcset="./images/igor-tab-1.jpg 1x, ./images/igor-tab-2.jpg 2x" media="(min-width: 768px)">
+                                    <source srcset="./images/igor-1.jpg 1x, ./images/igor-2.jpg 2x" media="(min-width: 480px)">
+                                      
+                                    <img srcset="./images/igor-2.jpg 2x" src="./images/igor-1.jpg" 
+                                    alt="Мужчина улыбается" 
+                                    width = "100%"
+                                    >
+                                </picture>
+                                
                                 <div class="employee">
                                     <h3 class="employee__name">Игорь Демьяненко</h3>
                                     <p class="employee__specialty">Product Designer</p>
@@ -258,7 +263,17 @@
                                     </ul>
                                 </div> 
                             </li>
-                            <li class="team__item"><img srcset="./images/olga-1.jpg 1x, ./images/olga-2.jpg 2x" src="./images/olga-1.jpg" alt="Девушка улыбается" width="100%">
+                            <li class="team__item">
+                                <picture>
+                                    <source srcset="./images/olga-desk-1.jpg 1x, ./images/olga-desk-2.jpg 2x" media="(min-width: 1200px)">
+                                    <source srcset="./images/olga-tab-1.jpg 1x, ./images/olga-tab-2.jpg 2x" media="(min-width: 768px)">
+                                    <source srcset="./images/olga-1.jpg 1x, ./images/olga-2.jpg 2x" media="(min-width: 480px)">
+                                
+                                    <img srcset="./images/olga-2.jpg 2x" src="./images/olga-1.jpg" 
+                                    alt="Девушка улыбается"
+                                    width="100%">
+                                </picture>
+                                
                                 <div class="employee">
                                     <h3 class="employee__name">Ольга Репина</h3>
                                     <p class="employee__specialty">Frontend Developer</p>
@@ -295,7 +310,16 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li class="team__item"><img srcset="./images/nikolai-1.jpg 1x, ./images/nikolai-2.jpg 2x" src="./images/nikolai-1.jpg" alt="Мужчина улыбается" width="100%">
+                            <li class="team__item">
+                                <picture>
+                                    <source srcset="./images/nikolai-desk-1.jpg 1x, ./images/nikolai-desk-2.jpg 2x" media="(min-width: 1200px)">
+                                    <source srcset="./images/nikolai-tab-1.jpg 1x, ./images/nikolai-tab-2.jpg 2x" media="(min-width: 768px)">
+                                    <source srcset="./images/nikolai-1.jpg 1x, ./images/nikolai-2.jpg 2x" media="(min-width: 480px)">
+                                
+                                    <img srcset="./images/nikolai-2.jpg 2x" src="./images/nikolai-1.jpg" 
+                                    alt="Мужчина улыбается" 
+                                    width="100%">
+                                </picture>
                                 <div class="employee">
                                     <h3 class="employee__name">Николай Тарасов</h3>
                                     <p class="employee__specialty">Marketing</p>
@@ -333,7 +357,16 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li class="team__item"><img srcset="./images/mikhail-1.jpg 1x, ./images/mikhail-2.jpg 2x" src="./images/mikhail-1.jpg" alt="Мужчина улыбается" width="100%">
+                            <li class="team__item">
+                                <picture>
+                                    <source srcset="./images/mikhail-desk-1.jpg 1x, ./images/mikhail-desk-2.jpg 2x" media="(min-width: 1200px)">
+                                    <source srcset="./images/mikhail-tab-1.jpg 1x, ./images/mikhail-tab-2.jpg 2x" media="(min-width: 768px)">
+                                    <source srcset="./images/mikhail-1.jpg 1x, ./images/mikhail-2.jpg 2x" media="(min-width: 480px)">
+                                
+                                    <img srcset="./images/mikhail-2.jpg 2x" src="./images/mikhail-1.jpg" 
+                                    alt="Мужчина улыбается" 
+                                    width="100%">
+                                </picture>
                                 <div class="employee">
                                     <h3 class="employee__name">Михаил Ермаков</h3>
                                     <p class="employee__specialty">UI Designer</p>
