@@ -4,32 +4,18 @@
   padding-bottom: 60px;
   background: $fon;
 
-  @media screen and (max-width: 479px) {
+  @media screen and (max-width: 1199px) {
     margin-left: auto;
     margin-right: auto;
   }
 
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    width: 480px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: 768px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    align-items: center;
-  }
   // основной текст футера
   &__container {
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       display: flex;
       flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-around;
     }
 
     @media screen and (min-width: 1200px) {
@@ -38,8 +24,13 @@
   }
 
   &__information {
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      margin-left: 76px;
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-grow: 1;
     }
   }
 
@@ -91,10 +82,6 @@
     margin-bottom: 60px;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-left: 165px;
-  }
-
   @media screen and (min-width: 1200px) {
     margin-left: 70px;
   }
@@ -104,7 +91,6 @@
     color: $textBtn;
 
     @media screen and (max-width: 767px) {
-      margin-top: 60px;
       text-align: center;
     }
   }

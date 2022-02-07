@@ -2,9 +2,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  // @media screen and (min-width: 1200px) {
-  //   display: flex;
-  // }
 
   &__item {
     @media screen and (max-width: 767px) {
@@ -34,35 +31,13 @@
   }
 
   &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: $btnFon;
     border-radius: 4px;
-
-    @media screen and (max-width: 479px) {
-      width: 100%;
-      text-align: center;
-      padding: 1vh 1vw;
-      margin-bottom: 30px;
-    }
-
-    @media screen and (min-width: 480px) and (max-width: 767px) {
-      width: 450px;
-      text-align: center;
-      padding: 25px 190px;
-      margin-bottom: 30px;
-    }
-
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      width: 354px;
-      text-align: center;
-      padding: 25px 144px;
-      margin-bottom: 30px;
-    }
-
-    @media screen and (min-width: 1200px) {
-      width: 270px;
-      padding: 25px 100px;
-      margin-bottom: 30px;
-    }
+    height: 120px;
+    margin-bottom: 30px;
   }
 
   &__title {
@@ -71,6 +46,10 @@
     line-height: 1.1;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       display: block;

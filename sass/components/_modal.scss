@@ -10,6 +10,10 @@
   overflow-y: scroll;
 
   transition: opacity 250ms linear, visibility 250ms linear;
+
+  @media screen and (max-width: 767px) {
+    padding: 15px;
+  }
 }
 
 .modal {
@@ -26,12 +30,10 @@
 
   @media screen and (max-width: 479px) {
     width: 90vw;
-    margin: 94px auto;
   }
 
   @media screen and (min-width: 480px) and (max-width: 1199px) {
     width: 450px;
-    margin: 94px auto;
   }
 
   @media screen and (min-width: 1200px) {

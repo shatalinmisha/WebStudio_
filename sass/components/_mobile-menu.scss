@@ -48,8 +48,8 @@
   .menu-container {
     z-index: 1;
     display: none;
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
@@ -79,6 +79,8 @@
     display: flex;
     flex-grow: 1;
     justify-content: space-between;
+    align-items: center;
+    margin-left: 88px;
   }
 }
 
@@ -88,7 +90,14 @@
 
     &__item {
       align-items: center;
-      margin-right: 10px;
+
+      &:not(:last-child) {
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+        padding-right: 10px;
+      }
+      &:not(:first-child) {
+        padding-left: 10px;
+      }
     }
 
     &__link {
@@ -100,13 +109,6 @@
       letter-spacing: 0.02em;
       color: $accent;
     }
-
-    // &__icon {
-    //   width: 22px;
-    //   height: 0;
-    //   border: 1px solid rgba(33, 33, 33, 0.2);
-    //   transform: rotate(90deg);
-    // }
   }
 }
 
