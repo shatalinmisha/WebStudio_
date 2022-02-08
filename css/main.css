@@ -1687,6 +1687,9 @@ textarea {
 }
 
 .portfolio-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
@@ -1694,18 +1697,7 @@ textarea {
           justify-content: center;
 }
 
-@media screen and (min-width: 768px) {
-  .portfolio-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-
 @media screen and (max-width: 767px) {
-  .portfolio-list__item {
-    width: auto;
-  }
   .portfolio-list__item:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -1785,6 +1777,12 @@ textarea {
 
 .portfolio-list__img {
   display: block;
+}
+
+@media screen and (max-width: 479px) {
+  .portfolio-list__img {
+    width: 100%;
+  }
 }
 
 .portfolio-list__text {

@@ -53,17 +53,12 @@
 }
 
 .portfolio-list {
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
 
-  @media screen and (min-width: 768px) {
-    display: flex;
-  }
-
   &__item {
     @media screen and (max-width: 767px) {
-      width: auto;
-
       &:not(:last-child) {
         margin-bottom: 30px;
       }
@@ -131,6 +126,9 @@
 
   &__img {
     display: block;
+    @media screen and (max-width: 479px) {
+      width: 100%;
+    }
   }
 
   &__text {
