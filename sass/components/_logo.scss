@@ -24,10 +24,8 @@
     font-size: 26px;
     line-height: 1.2;
     text-decoration: none;
-
-    @media screen and (min-width: 1200px) {
-      margin-right: 93px;
-    }
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 
   &__logo {

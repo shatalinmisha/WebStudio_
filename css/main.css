@@ -162,12 +162,8 @@ p {
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
-}
-
-@media screen and (min-width: 1200px) {
-  .header__link {
-    margin-right: 93px;
-  }
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header__logo {
@@ -452,6 +448,18 @@ p {
           align-items: center;
 }
 
+@media screen and (min-width: 768px) {
+  .mobile-nav {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mobile-nav {
+    margin-right: 93px;
+  }
+}
+
 .menu-button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -497,6 +505,21 @@ p {
   display: none;
 }
 
+.menu-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 @media screen and (max-width: 767px) {
   .menu-container {
     z-index: 1;
@@ -534,24 +557,6 @@ p {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .menu-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-left: 88px;
   }
 }
 
@@ -1232,6 +1237,12 @@ textarea {
           justify-content: center;
 }
 
+@media screen and (max-width: 1199px) {
+  .customers {
+    margin: -15px;
+  }
+}
+
 .customers__company {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1339,15 +1350,19 @@ textarea {
   }
 }
 
-@media screen and (max-width: 1199px) {
+.footer__information {
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
   .footer__information {
-    text-align: center;
     margin-bottom: 60px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .footer__information {
+    text-align: start;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;

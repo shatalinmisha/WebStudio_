@@ -3,6 +3,10 @@
   flex-wrap: wrap;
   justify-content: center;
 
+  @media screen and (max-width: 1199px) {
+    margin: -15px;
+  }
+
   &__company {
     display: flex;
     justify-content: center;

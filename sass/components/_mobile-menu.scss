@@ -2,6 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
 
 .menu-button {
@@ -44,8 +51,13 @@
   }
 }
 
-@media screen and (max-width: 767px) {
-  .menu-container {
+.menu-container {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (max-width: 767px) {
     z-index: 1;
     display: none;
     position: fixed;
@@ -72,15 +84,6 @@
         flex-direction: column-reverse;
       }
     }
-  }
-}
-@media screen and (min-width: 768px) {
-  .menu-container {
-    display: flex;
-    flex-grow: 1;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 88px;
   }
 }
 
